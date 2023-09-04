@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.galaxy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+  }
+  
+  .earth {
+    width: 60%;
+    position: absolute;
+    top: 41%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slide 30s linear infinite;
+}
+
+
+
+
+
+  
+
+  .venus {
+    width: 36%;
+    position: absolute;
+    top: 27%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slide 5s linear infinite;
+}
+
+
+
+
+
+  
+
+  .mercury {
+    width: 16%;
+    position: absolute;
+    top: 21%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slide 5s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+  .sun {
+    width: 30%;
+    position: absolute;
+    top: -2%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slide 5s linear infinite;
+}
+
+
+
+
+
+
+
+  
+  @keyframes slide {
+    0%{
+      right: 0%;
+      transform: rotate(0deg);
+    }
+    25%{
+      right: 15%;
+      
+    }
+    50%{
+      right:  29%;
+     
+    }
+    100%{
+      right: 50%;
+      transform: rotate(360deg);
+    }
+    /* from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+     */
+  }
